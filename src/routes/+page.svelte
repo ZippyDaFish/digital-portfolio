@@ -111,8 +111,8 @@
 
         <div class="space-y-4 text-gray-700">
             <p>Email: andrew.riker21@gmail.com</p>
-            <p>GitHub: github.com/ZippyDaFish</p>
-            <p>LinkedIn: linkedin.com/in/andrew-riker-727a65191/</p>
+            <p>GitHub: <a href="https://www.github.com/ZippyDaFish" target="_blank">github.com/ZippyDaFish</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/andrew-riker-727a65191/" target="_blank">linkedin.com/in/andrew-riker-727a65191</a></p>
         </div>
 
         <button class="mt-6 px-6 py-3 bg-black text-white rounded-lg">Send Message</button>
