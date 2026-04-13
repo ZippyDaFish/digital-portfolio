@@ -54,7 +54,7 @@
 </nav>
 
 <!-- Hero -->
-<section class="max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
+<section class="max-w-6xl mx-auto px-6 py-32 grid md:grid-cols-2 gap-12 items-center">
     <div>
         <h2 class="text-4xl font-bold mb-4">Hello, I'm Andrew</h2>
         <p class="text-lg text-gray-600 mb-6">Software Developer creating dashboards and productivity tools.</p>
@@ -71,22 +71,25 @@
     </div>
 </section>
 
-
 <!-- Projects -->
 <section id="projects" class="bg-gray-50 py-20">
     <div class="max-w-6xl mx-auto px-6">
         <h3 class="text-3xl font-bold mb-10">Featured Projects</h3>
         <div class="grid md:grid-cols-3 gap-8">
-            {#each projects as project}
-                <div class="bg-white border rounded-xl overflow-hidden shadow-sm">
-                    <div class="h-40 bg-gray-200 flex items-center justify-center"><img alt={project.imageAlt} src={project.image}/></div>
+            {#each projects as project} 
+                <a href={`/projects/${project.slug}`}
+                   class="group block bg-white border rounded-xl overflow-hidden shadow-sm transition duration-300 ease-out hover:-translate-y-1 hover:shadow-lg">
+                    <!-- Image -->
+                    <div class="h-40 bg-gray-200 flex items-center justify-center overflow-hidden">
+                        <img alt={project.imageAlt} src={project.image} class="object-cover w-full h-full transition duration-300"/>
+                    </div>
+                    <!-- Content -->
                     <div class="p-6">
-                        <h4 class="font-semibold text-lg mb-2">{project.title}</h4>
+                        <h4 class="font-semibold text-lg mb-2 group-hover:text-blue-600 transition-colors">{project.title}</h4>
                         <p class="text-gray-600 text-sm mb-3">{project.desc}</p>
                         <p class="text-xs text-gray-500 mb-4">{project.tech}</p>
-                        <a href={`/projects/${project.slug}`} class="text-sm font-medium border px-4 py-2 rounded inline-block">View Project</a>
                     </div>
-                </div>
+                </a>
             {/each}
         </div>
     </div>
