@@ -33,14 +33,22 @@
 </script>
 
 <!-- Nav -->
-<nav class="w-full border-b bg-white">
+<nav class="w-full border-b bg-white fixed">
     <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
-        <h1 class="font-bold text-lg">My Portfolio</h1>
-
+        <a href="#"><h1 class="font-bold text-lg">Andrew Riker</h1></a>
         <div class="space-x-6">
-            <a href="#projects" class="hover:text-blue-500">Projects</a>
-            <a href="#about" class="hover:text-blue-500">About</a>
-            <a href="#contact" class="hover:text-blue-500">Contact</a>
+            <a href="#projects" class="relative inline-block group transition duration-300 hover:-translate-y-1">
+                <span class="text-black transition-colors duration-300">Projects</span>
+                <span class="absolute left-1/2 -bottom-1 h-0.5 w-0 bg-black transform -translate-x-1/2 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="#about" class="relative inline-block group transition duration-300 hover:-translate-y-1">
+                <span class="text-black transition-colors duration-300">About</span>
+                <span class="absolute left-1/2 -bottom-1 h-0.5 w-0 bg-black transform -translate-x-1/2 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="#contact" class="relative inline-block group transition duration-300 hover:-translate-y-1">
+                <span class="text-black transition-colors duration-300">Contact</span>
+                <span class="absolute left-1/2 -bottom-1 h-0.5 w-0 bg-black transform -translate-x-1/2 transition-all duration-300 group-hover:w-full"></span>
+            </a>
         </div>
     </div>
 </nav>
