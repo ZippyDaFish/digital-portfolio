@@ -121,11 +121,10 @@
         <h3 class="text-3xl font-bold mb-6">Contact</h3>
 
         <div class="space-y-4 text-gray-700">
-            <p>Email: andrew.riker21@gmail.com</p>
+            <p>Email: <a href="mailto:andrew.riker21@gmail.com" target="_blank">andrew.riker21@gmail.com</a></p>
             <p>GitHub: <a href="https://www.github.com/ZippyDaFish" target="_blank">github.com/ZippyDaFish</a></p>
             <p>LinkedIn: <a href="https://www.linkedin.com/in/andrew-riker-727a65191/" target="_blank">linkedin.com/in/andrew-riker-727a65191</a></p>
         </div>
-
-        <button class="mt-6 px-6 py-3 bg-black text-white rounded-lg">Send Message</button>
+        <a href="mailto:andrew.riker21@gmail.com" target="_blank"><div class="max-w-42 mt-6 px-6 py-3 flex justify-center bg-black text-white rounded-lg">Send Message</div></a>
     </div>
 </section>
