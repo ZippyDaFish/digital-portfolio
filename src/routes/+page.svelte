@@ -33,7 +33,7 @@
 </script>
 
 <!-- Nav -->
-<nav class="w-full border-b bg-white fixed">
+<nav class="w-full border-b bg-white fixed z-10">
     <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
         <a href="#"><h1 class="font-bold text-lg">Andrew Riker</h1></a>
         <div class="space-x-6">
