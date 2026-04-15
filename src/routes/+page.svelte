@@ -57,10 +57,12 @@
 <section class="max-w-6xl mx-auto px-6 py-32 grid md:grid-cols-2 gap-12 items-center">
     <div>
         <h2 class="text-4xl font-bold mb-4">Hello, I'm Andrew</h2>
-        <p class="text-lg text-gray-600 mb-6">Software Developer creating dashboards and productivity tools.</p>
+        <p class="text-lg text-gray-600 mb-6">Full-Stack Web Developer.</p>
         <div class="space-x-4">
-            <a href="#projects" class="px-6 py-3 bg-black text-white rounded-lg">View Projects</a>
-            <a href="#contact" class="px-6 py-3 border rounded-lg">Contact</a>
+            <a href="#contact" class="relative inline-block group transition duration-300 hover:-translate-y-1">
+                <span class="text-black transition-colors duration-300">Let's Get in Contact</span>
+                <span class="absolute left-1/2 -bottom-1 h-0.5 w-2/3 bg-gray-500 transform -translate-x-1/2 transition-all duration-300 group-hover:w-full group-hover:bg-black"></span>
+            </a>
         </div>
     </div>
 
@@ -100,8 +102,8 @@
     <h3 class="text-3xl font-bold mb-6">About Me</h3>
 
     <p class="text-gray-600 mb-6 max-w-xl">
-        Software Developer with a passion for creating efficient, user-friendly solutions. Interested in building productivity tools and admin panels using tools such as React, 
-        Vue, and Svelte. Proficient in JavaScript, HTML, CSS, Python, C++, and more. Driven by curiosity and a commitment to continuous learning.
+        I am a Software Developer who takes a systematic approach to my work and my life. By taking things one step at a time, and always asking how I can make each step more efficient, I can make space for what truly matters to me. I'm particularly interested in building productivity tools and designing websites using tools such as React, 
+        Vue, and Svelte. In addition to the software side of things, I have an appreciation for robotics, electronics, and working with microcontrollers.<br><br>Proficient in JavaScript, HTML, CSS, Python, C++, and more. Driven by curiosity and a commitment to continuous learning.
     </p>
 
     <div class="flex flex-wrap gap-3">
