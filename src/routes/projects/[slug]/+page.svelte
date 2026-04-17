@@ -46,9 +46,11 @@
                     Tech Used
                 </h2>
 
-                <p class="text-gray-600 mb-3">
-                    {project.tech}
-                </p>
+                <div class="flex flex-wrap gap-3">
+                    {#each project.techs as tech}
+                        <span class="px-3 py-1 bg-gray-200 rounded">{tech}</span>
+                    {/each}
+                </div>
             </section>
 
             <section>
