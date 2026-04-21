@@ -3,64 +3,48 @@
     const project = data.project;
 </script>
 
-<section class="min-h-screen px-6 py-2">
-    <div class="max-w-3xl mx-auto">
+<section class="min-h-screen px-6 py-10 bg-white">
+    <div class="max-w-6xl mx-auto">
         <a href="/#projects" class="text-sm text-gray-500 hover:text-black transition">Back to projects</a>
-
         {#if project}
-        <!-- Title -->
-        <header class="mt-6 mb-16">
-            <h1 class="text-4xl font-bold tracking-tight mb-4">
-                {project.title}
-            </h1>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 mt-10">
+            <div class="lg:sticky lg:top-24 h-fit">
+                <h1 class="text-4xl font-bold tracking-tight mb-6">{project.title}</h1>
+                <p class="text-lg text-gray-600 leading-relaxed mb-10">{project.description}</p>
 
-            <p class="text-lg text-gray-600 leading-relaxed">
-                {project.description}
-            </p>
-        </header>
-
-        <!-- Content -->
-        <article class="space-y-12">
-            <section>
-                <h2 class="text-xl font-semibold">
-                    Problem
-                </h2>
-
-                <p class="text-gray-600 leading-relaxed mb-3">
-                    {project.problem}
-                </p>
-            </section>
-
-            <section>
-                <h2 class="text-xl font-semibold">
-                    Solution
-                </h2>
-
-                <p class="text-gray-600 leading-relaxed mb-3">
-                    {project.solution}
-                </p>
-            </section>
-
-            <section>
-                <h2 class="text-xl font-semibold">
-                    Tech Used
-                </h2>
-
-                <div class="flex flex-wrap gap-3">
-                    {#each project.techs as tech}
-                        <span class="px-3 py-1 bg-gray-200 rounded">{tech}</span>
-                    {/each}
+                <div class="space-y-10">
+                    <section>
+                        <h2 class="text-sm uppercase tracking-wider text-gray-500 mb-2">Problem</h2>
+                        <p class="text-gray-700 leading-relaxed">{project.problem}</p>
+                    </section>
+                    <section>
+                        <h2 class="text-sm uppercase tracking-wider text-gray-500 mb-2">Solution</h2>
+                        <p class="text-gray-700 leading-relaxed">{project.solution}</p>
+                    </section>
+                    <section>
+                        <h2 class="text-sm uppercase tracking-wider text-gray-500 mb-3">Tech Used</h2>
+                        <div class="flex flex-wrap gap-2">
+                            {#each project.techs as tech}
+                                <span class="px-3 py-1 bg-gray-200 rounded">
+                                    {tech}
+                                </span>
+                            {/each}
+                        </div>
+                    </section>
                 </div>
-            </section>
+            </div>
 
-            <section>
-                <video width="640" height="480" controls>
-                    <source src={project.demo} type="video/mp4">
-                    <source src="movie.ogg" type="video/ogg">
-                    Your browser does not support the video tag.
-                </video>
-            </section>
-        </article>
+            <div class="space-y-10">
+                <div class="bg-gray-100 rounded-lg">
+                    <div class="bg-white rounded-md shadow-sm aspect-video flex items-center justify-center overflow-hidden">
+                        <video class="w-full h-full object-contain" controls>
+                            <source src={project.demo} type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
         {/if}
     </div>
 </section>

@@ -8,7 +8,7 @@
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
 
 <!-- Nav -->
-<nav class="w-full border-b bg-white fixed z-10">
+<nav class="w-full border-b bg-white fixed z-20">
     <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
         <a href="/">
             <h1 class="font-bold text-lg">Andrew Riker</h1>
