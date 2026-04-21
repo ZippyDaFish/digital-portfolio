@@ -50,12 +50,16 @@
             </div>
         </div>
     </div>
-
-    <div class="flex justify-center">
-        <div class="w-64 h-64 rounded-full bg-gray-200 flex items-center justify-center overflow-hidden">
-            <img alt="Profile" src={pfp} class="w-full h-full object-cover"/>
+    <a href="https://www.linkedin.com/in/andrew-riker-727a65191/" target="_blank" class="inline-block group">
+        <div class="flex justify-center">
+            <div class="group relative w-64 h-64">
+                <span class="absolute inset-0 rounded-full bg-black scale-101 transition-transform duration-300 group-hover:scale-105"></span>
+                <div class="relative z-10 w-64 h-64 rounded-full bg-gray-200 flex items-center justify-center overflow-hidden">
+                    <img alt="Profile" src={pfp} class="w-full h-full object-cover"/>
+                </div>
+            </div>
         </div>
-    </div>
+    </a>
 </section>
 
 <!-- Projects -->
