@@ -35,7 +35,7 @@
 <!-- Hero -->
 <section class="max-w-6xl mx-auto px-6 py-32 grid md:grid-cols-2 gap-12 items-center">
     <div>
-        <h2 class="text-4xl font-bold mb-4">Hello, I'm Andrew</h2>
+        <h2 class="text-4xl font-bold mb-4">Hey, I'm Andrew</h2>
         <p class="text-lg text-gray-600 mb-6">Full-Stack Web Developer.</p>
         <div class="space-x-4">
             <div class="group inline-block">
@@ -50,16 +50,16 @@
             </div>
         </div>
     </div>
-    <a href="https://www.linkedin.com/in/andrew-riker-727a65191/" target="_blank" class="inline-block group">
-        <div class="flex justify-center">
-            <div class="group relative w-64 h-64">
-                <span class="absolute inset-0 rounded-full bg-black scale-101 transition-transform duration-300 group-hover:scale-105"></span>
+    <div class="flex justify-center">
+        <a href="https://www.linkedin.com/in/andrew-riker-727a65191/" target="_blank" class="inline-block rounded-full">
+            <div class="group relative w-64 h-64 rounded-full">
+                <span class="absolute inset-0 rounded-full bg-black scale-101 transition-transform duration-300 group-hover:scale-103"></span>
                 <div class="relative z-10 w-64 h-64 rounded-full bg-gray-200 flex items-center justify-center overflow-hidden">
                     <img alt="Profile" src={pfp} class="w-full h-full object-cover"/>
                 </div>
             </div>
-        </div>
-    </a>
+        </a>
+    </div>
 </section>
 
 <!-- Projects -->
