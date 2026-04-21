@@ -112,6 +112,11 @@
             <p>GitHub: <a href="https://www.github.com/ZippyDaFish" target="_blank">github.com/ZippyDaFish</a></p>
             <p>LinkedIn: <a href="https://www.linkedin.com/in/andrew-riker-727a65191/" target="_blank">linkedin.com/in/andrew-riker-727a65191</a></p>
         </div>
-        <a href="mailto:andrew.riker21@gmail.com" target="_blank"><div class="max-w-42 mt-6 px-6 py-3 flex justify-center bg-black text-white rounded-lg">Send Message</div></a>
+        <a href="mailto:andrew.riker21@gmail.com" target="_blank" class="inline-block group">
+            <div class="relative overflow-hidden max-w-42 mt-6 px-6 py-3 flex justify-center bg-black text-white border-2 border-black rounded-lg">
+                <span class="absolute inset-0 z-0 bg-white origin-left scale-x-0 transition-transform duration-300 ease-out group-hover:scale-x-100"></span>
+                <span class="relative z-10 transition-colors duration-300 group-hover:text-black">Send Message</span>
+            </div>
+        </a>
     </div>
 </section>
