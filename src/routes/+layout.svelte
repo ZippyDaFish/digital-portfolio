@@ -13,7 +13,7 @@
         <a href="/">
             <h1 class="font-bold text-lg">Andrew Riker</h1>
         </a>
-        <div class="flex gap-6">
+        <div class="flex gap-4">
             <div class="group">
                 <a href="/#projects" class="relative inline-block px-3 py-2 transition-transform duration-300
                         group-hover:-translate-y-1

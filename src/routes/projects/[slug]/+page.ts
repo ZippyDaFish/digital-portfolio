@@ -16,7 +16,7 @@ const cases: Record<string, Project> = {
         title: "Weather App",
         description: "A weather dashboard using a public weather API.",
         problem: "Users needed a quick way to view city weather.",
-        solution: "I built a responsive UI that fetches real-time weather. This weather dashboard shows allows a user to input any city in the search bar and see the current forecast in that city.",
+        solution: "I built a responsive UI that fetches real-time weather. This weather dashboard allows a user to input any city in the search bar and see the current forecast in that city.",
         techs: ["JavaScript", "Weather API"],
         demo: weatherDemo
     },
