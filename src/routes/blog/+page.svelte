@@ -36,12 +36,6 @@
             </a>
         </div>
     </div>
-
-    <div class="flex justify-center">
-        <div class="group relative w-72 h-48 rounded-2xl overflow-hidden">
-            <span class="absolute inset-0 bg-black scale-101 transition-transform duration-300 group-hover:scale-105"></span>
-        </div>
-    </div>
 </section>
 
 <!-- Blog Feed -->
